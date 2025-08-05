@@ -3,6 +3,7 @@ import Header from "@/components/Header"
 import Coursesection from "@/components/Coursesection"
 import Contactform from "@/components/Contactform"
 import Footer from "@/components/Footer"
+import Link from "next/link"
 
 const page = () => {
     return (
@@ -27,11 +28,12 @@ const page = () => {
                     <div className="mt-6 sm:mt-10">
                         <h1 className="text-white text-xl sm:text-2xl mb-4">Follow Us</h1>
                         <div className="flex gap-4 sm:gap-5 flex-wrap">
-                            <Image src="/yt.png" alt="YouTube" width={40} height={40} className="cursor-pointer" />
-                            <Image src="/fb.png" alt="Facebook" width={40} height={40} className="cursor-pointer" />
-                            <Image src="/instagram.png" alt="Instagram" width={40} height={40} className="cursor-pointer" />
-                            <Image src="/xlogo.png" alt="X" width={40} height={40} className="cursor-pointer" />
-                            <Image src="/linkedin.png" alt="LinkedIn" width={40} height={40} className="cursor-pointer" />
+                            <Link href="https://www.youtube.com/@yashbusinessman" target="_blank"><Image src="/yt.png" alt="YouTube" width={50} height={50} /></Link>
+                            <Link href="https://www.facebook.com/share/19i5do9s32/" target="_blank"><Image src="/fb.png" alt="Facebook" width={50} height={50} /></Link>
+                            <Link href="/"><Image src="/instagram.png" alt="Instagram" width={50} height={50} /></Link>
+                            <Link href="https://x.com/YashBusinessman?t=W1aKh-98c71x5cTwcbQ5Pg&s=08" target="_blank"><Image src="/xlogo.png" alt="X" width={50} height={50} /></Link>
+                            <Link href="https://www.linkedin.com/in/yash-businessman-goswami-a29412336/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><Image src="/linkedin.png" alt="LinkedIn" width={45} height={45} /></Link>
+                            <Link href="https://t.me/YashBusinessman" target="_blank"><Image src="/telegram.png" alt="telegram" width={45} height={45} /></Link>
                         </div>
                     </div>
                 </div>
@@ -56,12 +58,12 @@ const page = () => {
 
 
             <section>
-                <Image src="/Group 98.png" width={500} height={300} alt="image" className="min-h-30vw w-full"/>
+                <Image src="/Group 98.png" width={500} height={300} alt="image" className="min-h-30vw w-full" />
             </section>
 
 
             <section>
-               <Image src="/hurryup.png" width={500} height={300} alt="image" className="h-20vw w-full items-center"/>
+                <Image src="/hurryup.png" width={500} height={300} alt="image" className="h-20vw w-full items-center" />
             </section>
 
             <section>

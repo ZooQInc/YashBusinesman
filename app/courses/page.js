@@ -3,7 +3,7 @@ import Image from "next/image"
 import Coursesection from "@/components/Coursesection"
 import Contactform from "@/components/Contactform"
 import Footer from "@/components/Footer"
-
+import Link from "next/link"
 
 
 const page = () => {
@@ -34,11 +34,14 @@ const page = () => {
                                 </div>
 
                                 <div className="flex gap-3 mt-4 flex-wrap">
-                                    <Image src="/yt.png" alt="YouTube" width={40} height={40} className="w-[30px] sm:w-[40px] cursor-pointer" />
-                                    <Image src="/fb.png" alt="Facebook" width={40} height={40} className="w-[30px] sm:w-[40px] cursor-pointer" />
-                                    <Image src="/instagram.png" alt="Instagram" width={40} height={40} className="w-[30px] sm:w-[40px] cursor-pointer" />
-                                    <Image src="/xlogo.png" alt="X" width={40} height={40} className="w-[30px] sm:w-[40px] cursor-pointer" />
-                                    <Image src="/linkedin.png" alt="LinkedIn" width={40} height={40} className="w-[30px] sm:w-[40px] cursor-pointer" />
+
+                                    <Link href="https://www.youtube.com/@yashbusinessman" target="_blank"><Image src="/yt.png" alt="YouTube" width={50} height={50} /></Link>
+                                    <Link href="https://www.facebook.com/share/19i5do9s32/" target="_blank"><Image src="/fb.png" alt="Facebook" width={50} height={50} /></Link>
+                                    <Link href="/"><Image src="/instagram.png" alt="Instagram" width={50} height={50} /></Link>
+                                    <Link href="https://x.com/YashBusinessman?t=W1aKh-98c71x5cTwcbQ5Pg&s=08" target="_blank"><Image src="/xlogo.png" alt="X" width={50} height={50} /></Link>
+                                    <Link href="https://www.linkedin.com/in/yash-businessman-goswami-a29412336/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><Image src="/linkedin.png" alt="LinkedIn" width={45} height={45} /></Link>
+                                    <Link href="https://t.me/YashBusinessman" target="_blank"><Image src="/telegram.png" alt="telegram" width={45} height={45} /></Link>
+
                                 </div>
                             </div>
 
@@ -54,7 +57,7 @@ const page = () => {
                                     <Image src="/googleplay.png" width={200} height={120} alt="googleplay" className="mx-auto mt-4 w-[140px] sm:w-[200px]" />
                                 </div>
                             </div>
-                            
+
                             {/* Person image */}
                             <div className="hidden lg:block absolute right-10 bottom-[-50px] z-20">
                                 <Image src="/group102.png" width={500} height={500} alt="group" className="w-[250px] sm:w-[350px] lg:w-[500px]" />

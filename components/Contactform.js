@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const ContactForm = () => {
     const [role, setRole] = useState('Entrepreneur');
@@ -16,9 +17,9 @@ const ContactForm = () => {
 
     return (
         <div className="bg-[#1d1718] text-white p-8 flex flex-col items-center space-y-10 min-h-screen">
-            {/* Form and Radio */}
+
             <div className="w-full max-w-5xl flex flex-col md:flex-row justify-between gap-8">
-                {/* Contact Form */}
+
                 <div className="w-full md:w-1/2 space-y-4">
                     <h2 className="text-2xl font-bold text-center">Contact Us</h2>
                     <input
@@ -46,7 +47,7 @@ const ContactForm = () => {
                     </button>
                 </div>
 
-                {/* Role Selection */}
+
                 <div className="w-full md:w-1/2">
                     <h1 className="text-2xl font-bold mb-4 text-center">Who you are?</h1>
                     <div className="space-y-3">
@@ -68,7 +69,7 @@ const ContactForm = () => {
 
 
             <div className="flex flex-col md:flex-row justify-between items-center w-full max-w-5xl gap-6 mt-10">
-                {/* Logo Card */}
+
                 <div className="flex bg-black border-2 border-green-400 rounded-xl overflow-hidden w-full lg:w-[40%]">
                     <div className="">
                         <Image src="/yash1.png" alt="shocked face" width={150} height={150} />
@@ -80,15 +81,18 @@ const ContactForm = () => {
                     </div>
                 </div>
 
-                {/* Buttons */}
+
                 <div className="flex flex-col gap-4">
-                    <button className="bg-red-600 text-white py-4 px-30 rounded-lg text-lg font-semibold">
+                    <Link href="https://www.youtube.com/@yashbusinessman" target='_blank'><button className=" w-full cursor-pointer bg-red-600 text-white py-4 px-30 rounded-lg text-lg font-semibold">
                         Subscribe Youtube
-                    </button>
-                    <button className="bg-white text-green-600 border-2 border-green-600 py-4 px-30 rounded-lg text-lg font-semibold flex items-center gap-2 justify-center">
+                    </button></Link>
+
+                    <Link href="https://youtube.com/@yashbusinessman?si=t_rAWOT9stAvbHdI"><button className="w-full bg-white text-green-600 border-2 border-green-600 py-4 px-30 rounded-lg text-lg font-semibold flex items-center gap-2 justify-center">
                         <Image src="/whatsapp.png" alt="WhatsApp" width={40} height={40} />
                         Whatsapp Me
                     </button>
+                    </Link>
+
                 </div>
             </div>
 

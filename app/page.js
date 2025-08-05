@@ -4,6 +4,7 @@ import Herosection from "@/components/Herosection";
 import Youtubesection from "@/components/Youtubesection";
 import Contactform from "@/components/Contactform"
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 export default function Home() {
   return (
